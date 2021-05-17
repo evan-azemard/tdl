@@ -18,7 +18,6 @@
             <a href="deconnexion.php">Déconnexion</a>
         </div>
     </div>
-
 </header>
 <main id="tdl_main">
     <section id="tdl_section">

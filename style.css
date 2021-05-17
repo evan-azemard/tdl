@@ -1,315 +1,183 @@
-
-#index_body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-}
-
-a{
-    text-decoration: none;
-    color: white;
+#index_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 /*header*/
-#index_header{
-    background-color: #a2c9ca;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+#index_header {
+  background-color: #a2c9ca;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-#tdl_header{
-    background-color: #a2c9ca;
-    display: flex;
-    justify-content: center;
-}
-
-#tdl_header_div1 h1{
-    color: white;
-    font-size: 2.5rem;
-}
-
-#header_but{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#lien_button{
-    margin-left: 20vw;
-    font-size: 1.6rem;
-    background-color: rgba(133, 195, 211, 0.69);
-}
-
 /*div contient titre header*/
-#index_header_div1{
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#index_header_div1 {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 /*titre header*/
-#index_header_div1 h1{
-    color: white;
-    font-size: 3rem;
+#index_header_div1 h1 {
+  color: white;
+  font-size: 3rem;
 }
-
 /*main*/
-#index_main{
-    height: 60vh;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+#index_main {
+  height: 60vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
-
 /*section pour centrer form du main*/
-#index_main_sec1{
-    display: flex;
-    justify-content: center;
-    height: 35vh;
+#index_main_sec1 {
+  display: flex;
+  justify-content: center;
+  height: 35vh;
 }
-
-#index_main_sec1_div1{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+#index_main_sec1_div1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-
-#index_article1{
-    background-color: #a2c9ca;
-    width: 40%;
-    text-align: center;
-    border-radius: 25px;
-
+#index_article1 {
+  background-color: #a2c9ca;
+  width: 40%;
+  text-align: center;
+  border-radius: 25px;
 }
-
-#index_article2{
-    background-color: #a2c9ca;
-    width: 40%;
-    text-align:center;
-    border-radius: 25px;
+#index_article2 {
+  background-color: #a2c9ca;
+  width: 40%;
+  text-align: center;
+  border-radius: 25px;
 }
 /*formulaire inscription*/
-
-#form_inscription{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
-    text-align: center;
+#form_inscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  text-align: center;
 }
-
-#form_inscription input{
-    width: 60%;
-    height: 10%;
-    text-align: center;
-    outline: none;
+#form_inscription input {
+  width: 60%;
+  height: 10%;
+  text-align: center;
+  outline: none;
 }
-
-input:focus{
-        border: solid 1px #a0ffff;
+input:focus {
+  border: solid 1px #a0ffff;
 }
-
-#form_inscription input[type="submit"]{
-    color: gray;
-    font-size: 1.8rem;
+#form_inscription input[type="submit"] {
+  color: gray;
+  font-size: 1.8rem;
 }
-
-#legend_inscription{
-    font-size: 2rem;
-    font-weight: 5;
-    color: white;
+#legend_inscription {
+  font-size: 2rem;
+  font-weight: 5;
+  color: white;
 }
-
-
 
 /*formulaire connexion*/
-#form_connexion{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
-    text-align: center;
+#form_connexion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  text-align: center;
 }
-
-#form_connexion input{
-    width: 60%;
-    height: 10%;
-    text-align: center;
-    outline: none;
+#form_connexion input {
+  width: 60%;
+  height: 10%;
+  text-align: center;
+  outline: none;
 }
-
-input:focus{
-        border: solid 1px #a0ffff;
+input:focus {
+  border: solid 1px #a0ffff;
 }
-
-#form_connexion input[type="submit"]{
-    color: gray;
-    font-size: 1.8rem;
+#form_connexion input[type="submit"] {
+  color: gray;
+  font-size: 1.8rem;
 }
-
-#legend_connexion{
-    font-size: 2rem;
-    font-weight: 5;
-    color: white;
+#legend_connexion {
+  font-size: 2rem;
+  font-weight: 5;
+  color: white;
 }
-
 /*footer*/
-footer{
-    background-color: #a2c9ca;
-    height: 5vh;
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
+#index_footer {
+  background-color: #a2c9ca;
+  height: 5vh;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
 }
 
-#tdl_main{
-    height: 60vh;
-    display: flex;
-    justify-content: space-around;
-}
 
+/*Page todolist*/
+#tdl_header{
+  background-color: #a2c9ca;
+  display: flex;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+#header_but{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+#art2, #art2{
+  background-color: #a2c9ca;
+}
 #tdl_section{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
-
-#art1{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-#art2{
-    background-color: rgba(162, 201, 202, 0.35);
-    overflow: auto;
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-
-}
-.titre_list{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.div_list{
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(95, 158, 160, 0.72);
-    border-radius: 15px;
-}
-.h1titre{
-    font-size: 2rem;
-}
-#art3{
-    width: 33%;
-    background-color: #DFECED;
-}
-
-.form_ajouter{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    border-radius: 25px;
-    background-color: #a2c9ca;
-}
-.form_ajouter input[type="text"]{
-    outline: none;
-    border: none;
-
-}
-.form_ajouter textarea{
-    outline: none;
-    border: none;
-}
-
-.form_ajouter input[type="submit"]:focus{
-    border: solid 1px cadetblue;
-}
-.form_ajouter input[type="text"]:focus{
-    border: solid 1px cadetblue;
-}
-.form_ajouter textarea:focus{
-    outline: none;
-    border: solid 1px cadetblue;
-}
-
-.form_ajouter input[type="submit"]:focus{
-    border: solid 1px cadetblue;
-}
-
 .form_ajouter legend{
-    color: white;
-    font-size: 2rem;
+  font-size: 2rem;
 }
-.div_list_1{
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    background-color: rgba(15, 75, 75, 0.22);
+.form_ajouter{
+  border-radius: 15px;
+  background-color: #a2c9ca;
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
-.titre_list{
-    font-size: 1.2rem;
-    color: white;
-
+.form_ajouter input[type="submit"]{
+  width: 30%;
+  height: 10%;
 }
-.description_list{
-    height: 100%;
-    overflow: auto;
-    color: white;
+input{
+  text-align: center;
+  border: none;
+  outline: none;
 }
-.div_list_2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-    text-align: center;
-    align-items: center;
-    font-size: 1.4rem;
-    color: white;
+textarea{
+  border: none;
+  outline: none;
 }
-.div_list_3{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
+input:focus{
+  border: solid 1px cadetblue;
 }
-.form_ajouter input{
-    text-align: center;
-    width: 40%;
-}
-.div_list_3 button{
-    background-color: #a2c9ca;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    margin-right: 2%;
-}
-.div_list_3 button:hover{
-    background-color: #8aa1a2;
+textarea:focus{
+    border: solid 1px cadetblue;
 }
