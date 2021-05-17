@@ -21,7 +21,7 @@
                 <article id="index_article1">
                     <form method="post" name="Connexion" id="form_connexion">
                         <legend id="legend_connexion">Connexion</legend>
-                        <input aria-label="pseudo" type="text" name="c_pseudo" id="c_pseudo" placeholder="Login:">
+                        <input aria-label="login" type="text" name="c_login" id="c_login" placeholder="Login:">
                         <input aria-label="password" type="password" name="c_password" id="c_password" placeholder="Password:">
                         <input aria-label="connexion" type="submit" name="connexion" id="connexion-submit" value="Se connecter !">
                     </form>
