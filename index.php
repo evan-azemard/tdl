@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
     <title>To do list</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -37,7 +38,7 @@
     </section>
 </main>
 <footer id="index_footer">
-    <p>Copyright 2021 © Evan Azemard To Do list | Tous droits réservés</p>
+    <p>Copyright 2021 © Evan Azemard, Clément Nahmens To Do list | Tous droits réservés</p>
 </footer>
 </body>
 </html>
