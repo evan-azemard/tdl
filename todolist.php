@@ -24,8 +24,7 @@
         <article id="art1">
             <form method="post" class="form_ajouter" name="form_ajouter">
                 <legend>Ajouter une tache</legend>
-                    <input aria-label="titre" id="titre" placeholder="Titre" name="titre" type="text">
-                    <textarea style="width: 40%" aria-label="description" id="description" placeholder="Description"></textarea>
+                    <input aria-label="titre" id="titre" placeholder="Nom de la tache" name="titre" type="text">
                     <input type="submit" value="ajouter">
             </form>
         </article>
@@ -35,12 +34,7 @@
             </div>
             <div class="div_list">
                 <div class="div_list_1">
-                    <div class="titre_list">
-                        <h2>titre</h2>
-                    </div>
-                    <div class="description_list">
-                        <p>description</p>
-                    </div>
+                        <h1>titretitretitre</h1>
                 </div>
                 <div class="div_list_2">
                     <p>Créer le <br>28/06/2021</p>
