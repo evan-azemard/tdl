@@ -1,0 +1,133 @@
+#index_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+/*header*/
+#index_header{
+    background-color: #a2c9ca;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*div contient titre header*/
+#index_header_div1{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*titre header*/
+#index_header_div1 h1{
+    color: white;
+    font-size: 3rem;
+}
+/*main*/
+#index_main{
+    height: 60vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+/*section pour centrer form du main*/
+#index_main_sec1{
+    display: flex;
+    justify-content: center;
+    height: 35vh;
+}
+#index_main_sec1_div1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#index_article1{
+    background-color: #a2c9ca;
+    width: 40%;
+    text-align: center;
+    border-radius: 25px;
+
+}
+#index_article2{
+    background-color: #a2c9ca;
+    width: 40%;
+    text-align:center;
+    border-radius: 25px;
+
+}
+/*formulaire inscription*/
+#form_inscription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+#form_inscription input{
+    width: 60%;
+    height: 10%;
+    text-align: center;
+    outline: none;
+}
+input:focus{
+        border: solid 1px #a0ffff;
+}
+#form_inscription input[type="submit"]{
+    color: gray;
+    font-size: 1.8rem;
+}
+#legend_inscription{
+    font-size: 2rem;
+    font-weight: 5;
+    color: white;
+}
+
+
+
+/*formulaire connexion*/
+#form_connexion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+#form_connexion input{
+    width: 60%;
+    height: 10%;
+    text-align: center;
+    outline: none;
+}
+input:focus{
+        border: solid 1px #a0ffff;
+}
+#form_connexion input[type="submit"]{
+    color: gray;
+    font-size: 1.8rem;
+}
+#legend_connexion{
+    font-size: 2rem;
+    font-weight: 5;
+    color: white;
+}
+
+
+
+
+
+
+
+/*footer*/
+#index_footer{
+    background-color: #a2c9ca;
+    height: 5vh;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
