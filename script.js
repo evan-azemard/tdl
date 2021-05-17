@@ -33,9 +33,9 @@ $(document).ready( function()
 		{
 			e.preventDefault();
 			
-			email = $('#email').val();
+			login = $('#login').val();
 			password = $('#password').val();
-			passwordV = $('#passwordV').val();
+			rpassword = $('#r_password').val();
 			
 			length = /.{8,30}/;
 			symbol = /\W/;
@@ -53,9 +53,9 @@ $(document).ready( function()
 				$("#passwordError").css("display","none");
 			}
 			
-			if(password != passwordV)
+			if(password != r_password)
 			{
-				$('#passwordVError').css("display","block");
+				$('#r_passwordError').css("display","block");
 				return false;
 			}
 			
@@ -64,7 +64,7 @@ $(document).ready( function()
 				{
 					nom: $("#nom").val(),
 					prenom: $('#prenom').val(),
-					email: $('#email').val(),
+					login: $('#login').val(),
 					password: $('#password').val()
 				},
 				function(data)
@@ -78,10 +78,7 @@ $(document).ready( function()
 					{
 						$("main").prepend($("<p></p>").text("Les serveurs ne répondent pas."));
 					}
-					else if(data == "errMail")
-					{
-						$("main").prepend($("<p></p>").text("Le mail est déja pris."));
-					}
+					
 				},
 				'text'
 			);
@@ -94,8 +91,8 @@ $(document).ready( function()
 			$.post(
 				"connexion.php",
 				{
-					email: $('#email-co').val(),
-					password: $('#password-co').val()
+					email: $('#c_login').val(),
+					password: $('#c_password').val()
 				},
 				function(data){
 					$("#form_connexion").css("display", "none");
