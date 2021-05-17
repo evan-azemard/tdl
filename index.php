@@ -29,9 +29,9 @@
                 <article id="index_article2">
                     <form method="post" name="inscription" id="form_inscription">
                         <legend id="legend_inscription">Inscription</legend>
-                        <input aria-label="pseudo" type="text" name="nom" id="nom" placeholder="Nom:">
-                        <input aria-label="pseudo" type="text" name="prenom" id="prenom" placeholder="Prenom:">
-                        <input aria-label="pseudo" type="text" name="pseudo" id="pseudo" placeholder="Pseudo:">
+                        <input aria-label="nom" type="text" name="nom" id="nom" placeholder="Nom:">
+                        <input aria-label="prenom" type="text" name="prenom" id="prenom" placeholder="Prenom:">
+                        <input aria-label="login" type="text" name="login" id="login" placeholder="Login:">
                         <input aria-label="password" type="password" name="password" id="password" placeholder="Password:">
                         <input aria-label="r_password" type="password" name="r_password" id="r_password" placeholder="Répéter le password">
                         <input aria-label="inscription" type="submit" name="inscription" id="inscription-submit" value="S'inscrire !">
