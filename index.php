@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html>
 
 <head>
@@ -17,7 +15,7 @@
     <main>
         <form method="post" action="" id="inscription-form">
             <div class="input-zone">
-                <label for="email">Email:</label>
+                <label for="email">Email:</label>  
                 <input type="email" id="email" required />
             </div>
             <p class="error" id="emailError">Cet Email est déja pris</p>
