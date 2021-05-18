@@ -103,3 +103,15 @@ $(document).ready( function()
 			
 		});
 	});
+
+
+
+/*Partie de Evan*/
+
+var saisie =document.getElementById("tachename").value;
+
+var but = document.getElementById("buttonajouter");
+
+
+ but.onclick
+

@@ -40,10 +40,10 @@
                 </article>
             </div>
         </section>
+</main>
     <footer id="index_footer">
         <p>Copyright 2021 © Evan Azemard Clément Nahmens To Do list | Tous droits réservés</p>
     </footer>
-</main>
 </body>
 <script rel="text/javascript" src="script.js"></script>
 
