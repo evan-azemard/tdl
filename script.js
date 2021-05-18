@@ -110,7 +110,8 @@ $(document).ready( function()
 /*Partie de Evan*/
 
 function getValue() {
-	var input = document.getElementById("tachename").value;
+	var input = document.getElementById("tachename").value.trim();
+	var input2 = document.getElementById("tachename").value.trim();
 	let div = document.createElement("div");
 	let br = document.createElement("br");
 	let h1 = document.createElement("h1");
@@ -136,7 +137,10 @@ function getValue() {
 	});
 
 
-if (input){
+if (input2){
+	if (input2.length < 25){
+
+
 	div.className =  "div_list";
 	div1.className = "div_list_1";
 	div2.className = "div_list_2";
@@ -159,7 +163,13 @@ if (input){
 	div2.appendChild(p);
 	div3.appendChild(button1);
 	div3.appendChild(button2);
+	}else {
+		alert("Le nom de la tache est trop grande ! (" + input2.length + ")")
+	}
 
+
+}else {
+	alert('Vous devez avoir un nom de tache !')
 }
 
 
