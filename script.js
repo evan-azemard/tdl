@@ -102,7 +102,9 @@ $(document).ready( function()
 			);
 			
 		});
-	});
+	})
+
+
 
 
 
@@ -113,5 +115,8 @@ var saisie =document.getElementById("tachename").value;
 var but = document.getElementById("buttonajouter");
 
 
- but.onclick
+ but.addEventListener('click', () => {
+ 	alert(saisie)
+ })
+
 
