@@ -105,7 +105,6 @@ $(document).ready( function()
 			);
 			
 		});
-<<<<<<< HEAD
 	})
 
 
@@ -119,11 +118,8 @@ var saisie =document.getElementById("tachename").value;
 var but = document.getElementById("buttonajouter");
 
 
- but.addEventListener('click', () => {
- 	alert(saisie)
- })
+but.addEventListener('click', () => {
+alert(saisie)
+})
 
 
-=======
-	});
->>>>>>> 6e6eb7d2e5d6608d87e0ad0c6b581005f7b732a3
