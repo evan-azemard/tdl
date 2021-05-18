@@ -26,7 +26,7 @@
             <div  class="form_ajouter">
                 <legend>Ajouter une tache</legend>
                 <input aria-label="titre" id="tachename"  placeholder="Nom de la tache" type="text">
-                <p><span id="buttonajouter" onclick="getValue();">Ajouter</span></p>
+                <p><span id="buttonajouter">Ajouter</span></p>
             </div>
         </article>
         <article id="art2">

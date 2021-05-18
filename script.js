@@ -107,18 +107,8 @@ $(document).ready( function()
 	});
 })
 
-
-
-
-
 /*Partie de Evan*/
 
-
-but = document.getElementById("buttonajouter");
-
-but.addEventListener('click', () => {
-	alert(saisie)
-})
 function getValue() {
 	var input = document.getElementById("tachename").value;
 	let div = document.createElement("div");
@@ -131,46 +121,70 @@ function getValue() {
 	let button1 = document.createElement("button");
 	let button2 = document.createElement("button");
 
+	let para = "Créer le ";
+	let date = new Date();
+
+//On crée une date
+	let date1 = new Date();
+
+	let dateLocale = date1.toLocaleString('fr-FR',{
+		year: 'numeric',
+		month: 'numeric',
+		day: 'numeric',
+		hour: 'numeric',
+		minute: 'numeric',
+	});
+
+
+if (input){
 	div.className =  "div_list";
-	div1.className =  "div_list_1";
-	div2.className =  "div_list_2";
-	div3.className =  "div_list_3";
+	div1.className = "div_list_1";
+	div2.className = "div_list_2";
+	div3.className = "div_list_3";
 	h1.append(input);
-	p.append("Créer le : <br> + <!--date-->");
+	p.append(para,br,dateLocale);
 	button1.append("Tache accomplie");
 	button2.append("Supprimer la tache");
 
 	document.getElementById("art2").appendChild(div);
 	document.getElementById("art2").appendChild(br);
 
-	divlist = document.getElementsByClassName('div_list')
-	divlist1 = document.getElementsByClassName('div_list_1')
-	divlist2 = document.getElementsByClassName('div_list_2')
-	divlist3 = document.getElementsByClassName('div_list_3')
 
-	divlist.appendChild(div1);
-	divlist.appendChild(div2);
-	divlist.appendChild(div3);
 
-	divlist1.appendChild(h1);
-	divlist2.appendChild(p);
-	divlist3.appendChild(button1);
-	divlist3.appendChild(button2);
+	div.appendChild(div1);
+	div.appendChild(div2);
+	div.appendChild(div3);
 
+	div1.appendChild(h1);
+	div2.appendChild(p);
+	div3.appendChild(button1);
+	div3.appendChild(button2);
 
 }
 
-/*
-<div class="div_list">
-                <div class="div_list_1">
-                    <h1>titretitretitre</h1>
-                </div>
-                <div class="div_list_2">
-                    <p>Créer le <br>28/06/2021</p>
-                </div>
-                <div class="div_list_3">
-                    <button>Tache accomplie</button>
-                    <button>Supprimer la tache</button>
-                </div>
-            </div>*/
+
+
+
+}
+let ajouter = document.getElementById('buttonajouter');
+
+ajouter.addEventListener("click", () => {
+			getValue()
+		})
+
+/*var input = document.getElementById("tachename").value;
+let ajouter = document.getElementById('buttonajouter');
+
+
+if (input.length < 0){
+	ajouter.addEventListener("click", () => {
+			getValue()
+		})
+}else{
+	alert('Veuillez remplire le champs requis ! ')
+}*/
+
+
+
+
 

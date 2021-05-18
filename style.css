@@ -281,4 +281,6 @@ textarea:focus{
 #buttonajouter:hover{
   background-color: #b6e3e3;
   font-size: 1.6rem;
+  cursor: pointer;
+
 }
