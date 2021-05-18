@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="fr">
 
 <head>
@@ -10,41 +10,182 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body id="index_body">
-    <header id="index_header">
-        <div id="index_header_div1">
-            <h1>To Do List</h1>
-        </div>
+<body>
+    <header>
+        <button id="inscription">Inscription</button>
+        <button id="connexion">Connexion</button>
     </header>
-    <main id="index_main">
-        <section id="index_main_sec1">
-            <div id="index_main_sec1_div1">
-                <article id="index_article1">
-                    <form method="post" name="Connexion" id="form_connexion">
-                        <legend id="legend_connexion">Connexion</legend>
-                        <input aria-label="login" type="text" name="c_login" id="c_login" placeholder="Login:">
-                        <input aria-label="password" type="password" name="c_password" id="c_password" placeholder="Password:">
-                        <input aria-label="connexion" type="submit" name="connexion" id="connexion-submit" value="Se connecter !">
-                    </form>
-                </article>
-                <article id="index_article2">
-                    <form method="post" name="inscription" id="form_inscription">
-                        <legend id="legend_inscription">Inscription</legend>
-                        <input aria-label="nom" type="text" name="nom" id="nom" placeholder="Nom:">
-                        <input aria-label="prenom" type="text" name="prenom" id="prenom" placeholder="Prenom:">
-                        <input aria-label="login" type="text" name="login" id="login" placeholder="Login:">
-                        <input aria-label="password" type="password" name="password" id="password" placeholder="Password:">
-                        <input aria-label="r_password" type="password" name="r_password" id="r_password" placeholder="Répéter le password">
-                        <input aria-label="inscription" type="submit" name="inscription" id="inscription-submit" value="S'inscrire !">
-                    </form>
-                </article>
+
+    <main>
+        <form method="post" action="" id="inscription-form">
+            <div class="input-zone">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
             </div>
-        </section>
-</main>
+            <p class="error" id="emailError">Cet Email est déja pris</p>
+
+            <div class="input-zone">
+                <label for="nom">Nom: </label>
+                <input type="text" id="nom" required />
+            </div>
+
+            <div class="input-zone">
+                <label for="prenom">Prénom: </label>
+                <input type="text" id="prenom" required />
+            </div>
+
+            <div class="input-zone">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" required />
+            </div>
+            <p class="error" id="passwordError">Le mot de passe doit contenir au moins 8 characteres dont majuscule, minuscule et symbole</p>
+
+            <div class="input-zone">
+                <label for="passwordV">Confirmation Mot de Passe:</label>
+                <input type="password" id="passwordV" required />
+            </div>
+            <p class="error" id="passwordVError">Les mot de passes ne correspondent pas !</p>
+
+            <input type="submit" id="inscription-submit" value="S'inscrire" />
+        </form>
+
+        <form method="post" action="" id="connexion-form">
+            <div class="input-zone">
+                <label for="email-co">Email:</label>
+                <input type="email" id="email-co" />
+            </div>
+
+            <div class="input-zone">
+                <label for="password-co">Mot de passe:</label>
+                <input type="password" id="password-co" />
+            </div>
+            <input type="submit" id="connexion-submit" value="Se Connecter" />
+        </form>
+        <script rel="text/javascript" src="script.js"></script>
+
+    </main>
+</body>
+
+
+</html> -->
+
+
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>To do list</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <button id="inscription">Inscription</button>
+        <button id="connexion">Connexion</button>
+    </header>
+
+    <main>
+        <form method="post" action="" id="inscription-form">
+            <div class="input-zone">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+            </div>
+            <p class="error" id="emailError">Cet Email est déja pris</p>
+
+            <div class="input-zone">
+                <label for="nom">Nom: </label>
+                <input type="text" id="nom" required />
+            </div>
+
+            <div class="input-zone">
+                <label for="prenom">Prénom: </label>
+                <input type="text" id="prenom" required />
+            </div>
+
+            <div class="input-zone">
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" required />
+            </div>
+            <p class="error" id="passwordError">Le mot de passe doit contenir au moins 8 characteres dont majuscule, minuscule et symbole</p>
+
+            <div class="input-zone">
+                <label for="passwordV">Confirmation Mot de Passe:</label>
+                <input type="password" id="passwordV" required />
+            </div>
+            <p class="error" id="passwordVError">Les mot de passes ne correspondent pas !</p>
+
+            <input type="submit" id="inscription-submit" value="S'inscrire" />
+        </form>
+
+        <form method="post" action="" id="connexion-form">
+            <div class="input-zone">
+                <label for="email-co">Email:</label>
+                <input type="email" id="email-co" />
+            </div>
+
+            <div class="input-zone">
+                <label for="password-co">Mot de passe:</label>
+                <input type="password" id="password-co" />
+            </div>
+            <input type="submit" id="connexion-submit" value="Se Connecter" />
+        </form>
+
+    </main>
     <footer id="index_footer">
         <p>Copyright 2021 © Evan Azemard Clément Nahmens To Do list | Tous droits réservés</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-<script rel="text/javascript" src="script.js"></script>
 
 </html>
+
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #inscription-form,
+    #connexion-form {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20em;
+    }
+
+    .input-zone {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5em;
+    }
+
+    input {
+        max-width: 50%;
+        max-height: 2em;
+        align-self: center;
+    }
+
+    label {
+        align-self: center;
+    }
+
+    .error {
+        color: white;
+        background-color: red;
+        text-align: center;
+        height: fit-content;
+        border-radius: 0.3em;
+        align-self: center;
+        padding: 0.2em;
+        margin-top: -0.3em;
+        width: 70%;
+        display: none;
+    }
+</style>

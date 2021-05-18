@@ -2,8 +2,8 @@ $(document).ready( function()
 	{
 		$('#inscription').click( function() 
 		{
-			form = $('#form_inscription');
-			$('#form_connexion').css("display","none");
+			form = $('#inscription-form');
+			$('#connexion-form').css("display","none");
 			
 			if(form.css("display")== 'none')
 			{
@@ -17,8 +17,8 @@ $(document).ready( function()
 			
 		$('#connexion').click( function() 
 		{
-			form = $('#form_connexion');
-			$('#form_inscription').css("display","none");
+			form = $('#connexion-form');
+			$('#inscription-form').css("display","none");
 			if(form.css("display") == 'none')
 			{
 				form.css("display","flex");					
@@ -33,9 +33,9 @@ $(document).ready( function()
 		{
 			e.preventDefault();
 			
-			login = $('#login').val();
+			email = $('#email').val();
 			password = $('#password').val();
-			rpassword = $('#r_password').val();
+			passwordV = $('#passwordV').val();
 			
 			length = /.{8,30}/;
 			symbol = /\W/;
@@ -53,9 +53,9 @@ $(document).ready( function()
 				$("#passwordError").css("display","none");
 			}
 			
-			if(password != r_password)
+			if(password != passwordV)
 			{
-				$('#r_passwordError').css("display","block");
+				$('#passwordVError').css("display","block");
 				return false;
 			}
 			
@@ -64,21 +64,24 @@ $(document).ready( function()
 				{
 					nom: $("#nom").val(),
 					prenom: $('#prenom').val(),
-					login: $('#login').val(),
+					email: $('#email').val(),
 					password: $('#password').val()
 				},
 				function(data)
 				{
 					if(data == "success")
 					{
-						$("#form_inscription").css("display", "none");
-						$("#form_connexion").css("display", "flex");
+						$("#inscription-form").css("display", "none");
+						$("#connexion-form").css("display", "flex");
 					}
 					else if(data == "err")
 					{
 						$("main").prepend($("<p></p>").text("Les serveurs ne répondent pas."));
 					}
-					
+					else if(data == "errMail")
+					{
+						$("main").prepend($("<p></p>").text("Le mail est déja pris."));
+					}
 				},
 				'text'
 			);
@@ -91,11 +94,11 @@ $(document).ready( function()
 			$.post(
 				"connexion.php",
 				{
-					email: $('#c_login').val(),
-					password: $('#c_password').val()
+					email: $('#email-co').val(),
+					password: $('#password-co').val()
 				},
 				function(data){
-					$("#form_connexion").css("display", "none");
+					$("#connexion-form").css("display", "none");
 					$("body").prepend($('<p></p>').text("Bonjour "+data["nom"]));
 				},
 				"json"
@@ -103,15 +106,3 @@ $(document).ready( function()
 			
 		});
 	});
-
-
-
-/*Partie de Evan*/
-
-var saisie =document.getElementById("tachename").value;
-
-var but = document.getElementById("buttonajouter");
-
-
- but.onclick
-

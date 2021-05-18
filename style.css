@@ -273,12 +273,3 @@ textarea:focus{
 .div_list_3 button:hover{
   background-color: #a2c9ca;
 }
-
-
-#spanajouter:hover{
-  background-color: #39aecd;
-}
-#spanajouter{
-  background-color: #a3e6f8;
-  font-size: 1.6rem;
-}
