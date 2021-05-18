@@ -24,8 +24,8 @@
         <article id="art1">
             <form method="post" class="form_ajouter" name="form_ajouter">
                 <legend>Ajouter une tache</legend>
-                    <input aria-label="titre" id="tachename" placeholder="Nom de la tache" name="titre" type="text">
-                <p id="buttonajouter"><span id="spanajouter">Ajouter</span></p>
+                    <input aria-label="titre" id="titre" placeholder="Nom de la tache" name="titre" type="text">
+                    <input type="submit" value="ajouter">
             </form>
         </article>
         <article id="art2">
@@ -74,6 +74,5 @@
     <p>Copyright 2021 © Evan Azemard, Clément Nahmens To Do list | Tous droits réservés</p>
 </footer>
 </body>
-<script rel="text/javascript" src="script.js"></script>
 </html>
 
