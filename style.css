@@ -58,7 +58,7 @@
   border-radius: 25px;
 }
 /*formulaire inscription*/
-#form_inscription {
+#inscription_form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -66,7 +66,7 @@
   align-items: center;
   text-align: center;
 }
-#form_inscription input {
+#inscription_form input {
   width: 60%;
   height: 10%;
   text-align: center;
@@ -75,7 +75,7 @@
 input:focus {
   border: solid 1px #a0ffff;
 }
-#form_inscription input[type="submit"] {
+#inscription_form input[type="submit"] {
   color: gray;
   font-size: 1.8rem;
 }
@@ -86,7 +86,7 @@ input:focus {
 }
 
 /*formulaire connexion*/
-#form_connexion {
+#connexion_form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -94,7 +94,7 @@ input:focus {
   align-items: center;
   text-align: center;
 }
-#form_connexion input {
+#connexion_form input {
   width: 60%;
   height: 10%;
   text-align: center;
@@ -103,7 +103,7 @@ input:focus {
 input:focus {
   border: solid 1px #a0ffff;
 }
-#form_connexion input[type="submit"] {
+#connexion_form input[type="submit"] {
   color: gray;
   font-size: 1.8rem;
 }
@@ -130,19 +130,18 @@ input:focus {
   text-align: center;
 }
 
-
 /*Page todolist*/
-#tdl_header{
+#tdl_header {
   background-color: #a2c9ca;
   display: flex;
   justify-content: center;
 }
-a{
+a {
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
 }
-#header_but{
+#header_but {
   width: 40%;
   display: flex;
   justify-content: space-around;
@@ -150,7 +149,8 @@ a{
   color: white;
 }
 
-#art2, #art3{
+#art2,
+#art3 {
   background-color: #c2dbdb;
   height: 60vh;
   width: 30%;
@@ -158,19 +158,19 @@ a{
   flex-direction: column;
   overflow: auto;
 }
-#art1{
+#art1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#tdl_section{
+#tdl_section {
   display: flex;
   justify-content: space-around;
 }
-.form_ajouter legend{
+.form_ajouter legend {
   font-size: 2rem;
 }
-.form_ajouter{
+.form_ajouter {
   border-radius: 15px;
   background-color: #a2c9ca;
   width: 20vw;
@@ -182,35 +182,34 @@ a{
   text-align: center;
   color: white;
 }
-.form_ajouter input[type="submit"]{
+.form_ajouter input[type="submit"] {
   width: 30%;
   height: 10%;
 }
-input{
+input {
   text-align: center;
   border: none;
   outline: none;
 }
-textarea{
+textarea {
   border: none;
   outline: none;
 }
-input:focus{
+input:focus {
   border: solid 1px cadetblue;
 }
-textarea:focus{
-    border: solid 1px cadetblue;
+textarea:focus {
+  border: solid 1px cadetblue;
 }
-.titre_list{
+.titre_list {
   display: flex;
   justify-content: center;
-
 }
-.h1titre{
+.h1titre {
   font-size: 1.6rem;
   color: white;
 }
-.div_list{
+.div_list {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -218,7 +217,7 @@ textarea:focus{
   border-radius: 15px;
   height: 15vh;
 }
-.div_list_1{
+.div_list_1 {
   width: 40%;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
@@ -232,20 +231,20 @@ textarea:focus{
   font-size: 1.3rem;
   background-color: rgba(149, 185, 186, 0.54);
 }
-.titre_list2{
+.titre_list2 {
   text-align: center;
   color: white;
   font-size: 1.6rem;
   height: 40%;
 }
-.description_list{
+.description_list {
   height: 50%;
   overflow: auto;
   display: flex;
   justify-content: center;
   color: white;
 }
-.div_list_2{
+.div_list_2 {
   width: 50%;
   text-align: center;
   align-items: center;
@@ -255,7 +254,7 @@ textarea:focus{
   color: white;
   font-size: 1.6rem;
 }
-.div_list_3{
+.div_list_3 {
   width: 50%;
   text-align: center;
   align-items: center;
@@ -263,13 +262,13 @@ textarea:focus{
   flex-direction: column;
   justify-content: space-around;
 }
-.div_list_3 button{
+.div_list_3 button {
   border: none;
   font-size: 1.4rem;
   background-color: rgba(67, 113, 114, 0.31);
   border-radius: 15px;
   color: white;
 }
-.div_list_3 button:hover{
+.div_list_3 button:hover {
   background-color: #a2c9ca;
 }
