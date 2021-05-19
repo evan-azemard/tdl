@@ -137,62 +137,49 @@ function getValue() {
 	});
 
 
-if (input2){
-	if (input2.length < 25){
+	if (input2){
+		if (input2.length < 25){
 
 
-	div.className =  "div_list";
-	div1.className = "div_list_1";
-	div2.className = "div_list_2";
-	div3.className = "div_list_3";
-	h1.append(input);
-	p.append(para,br,dateLocale);
-	button1.append("Tache accomplie");
-	button2.append("Supprimer la tache");
+			div.className =  "div_list";
+			div1.className = "div_list_1";
+			div2.className = "div_list_2";
+			div3.className = "div_list_3";
+			h1.append(input);
+			p.append(para,br,dateLocale);
+			button1.append("Tache accomplie");
+			button2.append("Supprimer la tache");
 
-	document.getElementById("art2").appendChild(div);
-	document.getElementById("art2").appendChild(br);
+			document.getElementById("art2").appendChild(div);
+			document.getElementById("art2").appendChild(br);
 
 
 
-	div.appendChild(div1);
-	div.appendChild(div2);
-	div.appendChild(div3);
+			div.appendChild(div1);
+			div.appendChild(div2);
+			div.appendChild(div3);
 
-	div1.appendChild(h1);
-	div2.appendChild(p);
-	div3.appendChild(button1);
-	div3.appendChild(button2);
+			div1.appendChild(h1);
+			div2.appendChild(p);
+			div3.appendChild(button1);
+			div3.appendChild(button2);
+		}else {
+			alert("Le nom de la tache est trop grande ! (" + input2.length + ")")
+		}
+
+
 	}else {
-		alert("Le nom de la tache est trop grande ! (" + input2.length + ")")
+		alert('Vous devez avoir un nom de tache !')
 	}
-
-
-}else {
-	alert('Vous devez avoir un nom de tache !')
-}
-
-
-
 
 }
 let ajouter = document.getElementById('buttonajouter');
 
 ajouter.addEventListener("click", () => {
-			getValue()
-		})
-
-/*var input = document.getElementById("tachename").value;
-let ajouter = document.getElementById('buttonajouter');
+	getValue()
+})
 
 
-if (input.length < 0){
-	ajouter.addEventListener("click", () => {
-			getValue()
-		})
-}else{
-	alert('Veuillez remplire le champs requis ! ')
-}*/
 
 
 
