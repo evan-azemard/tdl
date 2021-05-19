@@ -58,7 +58,7 @@
   border-radius: 25px;
 }
 /*formulaire inscription*/
-#inscription_form {
+#form_inscription {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -66,7 +66,7 @@
   align-items: center;
   text-align: center;
 }
-#inscription_form input {
+#form_inscription input {
   width: 60%;
   height: 10%;
   text-align: center;
@@ -75,7 +75,7 @@
 input:focus {
   border: solid 1px #a0ffff;
 }
-#inscription_form input[type="submit"] {
+#form_inscription input[type="submit"] {
   color: gray;
   font-size: 1.8rem;
 }
@@ -86,7 +86,7 @@ input:focus {
 }
 
 /*formulaire connexion*/
-#connexion_form {
+#form_connexion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -94,7 +94,7 @@ input:focus {
   align-items: center;
   text-align: center;
 }
-#connexion_form input {
+#form_connexion input {
   width: 60%;
   height: 10%;
   text-align: center;
@@ -103,7 +103,7 @@ input:focus {
 input:focus {
   border: solid 1px #a0ffff;
 }
-#connexion_form input[type="submit"] {
+#form_connexion input[type="submit"] {
   color: gray;
   font-size: 1.8rem;
 }
@@ -273,13 +273,12 @@ textarea:focus {
   background-color: #a2c9ca;
 }
 
-#buttonajouter{
+#buttonajouter {
   background-color: #7bbebe;
   font-size: 1.6rem;
 }
-#buttonajouter:hover{
+#buttonajouter:hover {
   background-color: #b6e3e3;
   font-size: 1.6rem;
   cursor: pointer;
-
 }

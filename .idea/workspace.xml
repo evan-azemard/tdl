@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0001a041-a00d-4d1d-98b7-16c3cfd91046" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/affiche.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.php" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1sefgHwRog8jWvDuAnTITWTqe7D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Plateforme/boutique" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0001a041-a00d-4d1d-98b7-16c3cfd91046" name="Default Changelist" comment="" />
+      <created>1621238085990</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621238085990</updated>
+      <workItem from="1621238087200" duration="14896000" />
+      <workItem from="1621259043730" duration="5893000" />
+      <workItem from="1621326775117" duration="35475000" />
+    </task>
+    <task id="LOCAL-00001" summary="ajout page index faites">
+      <created>1621241395049</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621241395049</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Pages todolist finit.&#10;&#10;html css 100%finit">
+      <created>1621249813545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621249813545</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Création des élément en js">
+      <created>1621340076954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621340076954</updated>
+    </task>
+    <task id="LOCAL-00004" summary="on peut mtn, créer une tache">
+      <created>1621348196595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621348196595</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Rajout des conditions de longueure et d'avoir l'input rempli">
+      <created>1621348942223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621348942223</updated>
+    </task>
+    <task id="LOCAL-00006" summary="La liste est mtn sauvegarder dans la bdd">
+      <created>1621418969165</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621418969165</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Une session id est créer pendant la connexion, condition pour accéder à la page todolist">
+      <created>1621419973061</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1621419973061</updated>
+    </task>
+    <task id="LOCAL-00008" summary="La session id est mtn converti en variable js pour la base de donnée">
+      <created>1621420618234</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621420618234</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajout page index faites" />
+    <MESSAGE value="Pages todolist finit.&#10;&#10;html css 100%finit" />
+    <MESSAGE value="Création des élément en js" />
+    <MESSAGE value="on peut mtn, créer une tache" />
+    <MESSAGE value="Rajout des conditions de longueure et d'avoir l'input rempli" />
+    <MESSAGE value="La liste est mtn sauvegarder dans la bdd" />
+    <MESSAGE value="Une session id est créer pendant la connexion, condition pour accéder à la page todolist" />
+    <MESSAGE value="La session id est mtn converti en variable js pour la base de donnée" />
+    <option name="LAST_COMMIT_MESSAGE" value="La session id est mtn converti en variable js pour la base de donnée" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/inscription.php</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
