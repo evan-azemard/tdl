@@ -8,7 +8,7 @@ if (!isset($_SESSION["id"])) {
             echo json_encode($usr);
 
             $_SESSION['id'] = $usr['id'];
-
+            /*test*/
         } else {
             echo "err";
         }
