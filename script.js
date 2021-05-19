@@ -110,6 +110,7 @@ $(document).ready( function()
 /*Partie de Evan*/
 
 function getValue() {
+
 	var input = document.getElementById("tachename").value.trim();
 	var input2 = document.getElementById("tachename").value.trim();
 	let div = document.createElement("div");
@@ -154,7 +155,6 @@ function getValue() {
 			document.getElementById("art2").appendChild(br);
 
 
-
 			div.appendChild(div1);
 			div.appendChild(div2);
 			div.appendChild(div3);
@@ -163,6 +163,71 @@ function getValue() {
 			div2.appendChild(p);
 			div3.appendChild(button1);
 			div3.appendChild(button2);
+
+			utilisateur = 1;
+
+				$.post(
+					"list.php",
+					{
+						input: input,
+						dateLocale: dateLocale,
+						utilisateur: utilisateur,
+
+					}, function(data){
+						alert(data);
+
+					});
+
+				/*,
+					function (data){
+						if(data === "err")
+						{
+							$("main").prepend($("<p></p>").text("Les serveurs ne répondent pas."));
+						}else if (date === "err2"){
+							$("main").prepend($("<p></p>").text("Il n'y à pas de post."));
+						}
+					},
+					"json"
+				);*/
+
+
+/*
+			test();
+
+			function test (e) {
+				e.preventDefault();
+
+				$.post(
+					"list.php",
+					{
+						pro3: input,
+						pro2: dateLocale,
+						pro: utilisateur,
+
+					},
+					function (data){
+						if(data === "err")
+						{
+							$("main").prepend($("<p></p>").text("Les serveurs ne répondent pas."));
+						}else if (date === "err2"){
+							$("main").prepend($("<p></p>").text("Il n'y à pas de post."));
+						}
+
+					},
+					"json"
+				);
+			alert(pro + pro2 + pro3);
+			}*/
+
+
+
+
+
+
+
+
+
+
 		}else {
 			alert("Le nom de la tache est trop grande ! (" + input2.length + ")")
 		}
@@ -178,10 +243,6 @@ let ajouter = document.getElementById('buttonajouter');
 ajouter.addEventListener("click", () => {
 	getValue()
 })
-
-
-
-
 
 
 

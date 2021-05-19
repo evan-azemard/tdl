@@ -5,6 +5,8 @@ if (!isset($_SESSION["id"])) {
         $usr = $stmt->query("SELECT nom, password, id FROM utilisateurs WHERE email = '" . $_POST["email"] . "'")->fetch(PDO::FETCH_ASSOC);
         if (password_verify($_POST["password"], $usr["password"])) {
             echo json_encode($usr);
+            $_SESSION['id'] = $usr['id'];
+            var_dump($_SESSION['id']);
         } else {
             echo "err";
         }
