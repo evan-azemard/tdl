@@ -164,17 +164,14 @@ function getValue() {
 			div3.appendChild(button1);
 			div3.appendChild(button2);
 
-			utilisateur = 1;
+
 
 				$.post(
 					"list.php",
 					{
 						input: input,
 						dateLocale: dateLocale,
-						utilisateur: utilisateur,
-
-					}, function(data){
-						alert(data);
+						utilisateur: id,
 
 					});
 

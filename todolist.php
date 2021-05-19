@@ -4,6 +4,9 @@ if (empty($_SESSION['id'])){
     header('location: index.php');
 }
 ?>
+<script>
+    var id = <?php echo $_SESSION['id'];?>;
+</script>
 <!doctype html>
 <html lang="fr">
 <head>
