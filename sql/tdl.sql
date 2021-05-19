@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 19 mai 2021 à 10:17
+-- Généré le : mer. 19 mai 2021 à 12:39
 -- Version du serveur :  10.4.19-MariaDB
 -- Version de PHP : 8.0.6
 
@@ -27,13 +27,12 @@ SET time_zone = "+00:00";
 -- Structure de la table `active`
 --
 CREATE DATABASE tdl;
-
 CREATE TABLE `active` (
   `id` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `message` varchar(25) NOT NULL,
-  `date_debut` datetime NOT NULL,
-  `date_fin` datetime NOT NULL
+  `date_debut` text NOT NULL,
+  `date_fin` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -46,8 +45,18 @@ CREATE TABLE `liste` (
   `id` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `message` varchar(25) NOT NULL,
-  `date_debut` datetime NOT NULL
+  `date_debut` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `liste`
+--
+
+INSERT INTO `liste` (`id`, `id_user`, `message`, `date_debut`) VALUES
+(5, 0, 'okokok', '0000-00-00 00:00:00'),
+(6, 0, 'ok', '0000-00-00 00:00:00'),
+(7, 4, 'lolitop', '0000-00-00 00:00:00'),
+(8, 4, 'rrrrrrrrrr', '19/05/2021, 12:38');
 
 -- --------------------------------------------------------
 
@@ -70,7 +79,8 @@ CREATE TABLE `utilisateurs` (
 INSERT INTO `utilisateurs` (`id`, `nom`, `prenom`, `email`, `password`) VALUES
 (1, 'errero', 'Claude', 'claude@gamail.com', '$2y$10$gZSbYb6GubshmR.ZaijTQOqVjdf8Ziq8Jriar.IHC56xWcrU7QsAK'),
 (2, 'azem', 'evan', 'evan@gmail.com', '$2y$10$5zv8jH1.8l2J.v8uoO7eee/RYZjoupzqikbNCH0luvJb07lpzbCZW'),
-(3, 'UserTest', 'UserTest', 'test@gmail.com', '$2y$10$SpumXTY7H2fbxG4WZhCeR.bABUAefhMHST3naFnVpdhdHIKvmCHw6');
+(3, 'UserTest', 'UserTest', 'test@gmail.com', '$2y$10$SpumXTY7H2fbxG4WZhCeR.bABUAefhMHST3naFnVpdhdHIKvmCHw6'),
+(4, 'User', 'User', 'User@gmail.com', '$2y$10$BxF.ll4j9pBY2bfZ2WhPbO0AqTZ/RMQr26wwDsE58uBj4MX2lGgtq');
 
 --
 -- Index pour les tables déchargées
@@ -108,13 +118,13 @@ ALTER TABLE `active`
 -- AUTO_INCREMENT pour la table `liste`
 --
 ALTER TABLE `liste`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
