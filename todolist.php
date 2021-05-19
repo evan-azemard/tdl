@@ -45,8 +45,25 @@ include ('affiche.php');
             <div class="titre_list">
                 <h1 class="h1titre">Liste des taches.</h1>
             </div>
+            <?php
+            foreach ($liste as $li){
+?>
+            <div class="div_list">
+                <div class="div_list_1">
+                    <h1><?= $li['message']; ?></h1>
+                </div>
+                <div class="div_list_2">
+                    <p>Créer le <?= $li['date_debut']; ?></p></div>
+                <div class="div_list_3">
+                    <button>Tache accomplie</button>
+                    <button>Supprimer la tache</button>
+                </div>
+            </div>
+<br>
+                <?php
+            }
+            ?>
 
-            <br>
         </article>
         <article id="art3">
             <div class="titre_list">
