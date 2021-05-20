@@ -2,30 +2,39 @@ $(document).ready( function()
 {
 	$('#inscription').click( function()
 	{
-		form = $('#inscription-form');
-		$('#connexion-form').css("display","none");
+		coco = $('#index_article2');
+		form = $('#inscription_form');
+		co = $('#index_article1');
+		$('#index_article1').css("display","none");
+		$('#connexion_form').css("display","none");
 
 		if(form.css("display")== 'none')
 		{
 			form.css("display","flex");
+			coco.css("display","flex");
 		}
 		else
 		{
 			form.css("display","none");
+			coco.css("display","none");
 		}
 	});
 
 	$('#connexion').click( function()
 	{
-		form = $('#connexion-form');
-		$('#inscription-form').css("display","none");
+		co = $('#index_article1');
+		$('#index_article2').css("display","none");
+		form = $('#connexion_form');
+		$('#inscription_form').css("display","none");
 		if(form.css("display") == 'none')
 		{
 			form.css("display","flex");
+			co.css("display","flex");
 		}
 		else
 		{
 			form.css("display","none");
+			co.css("display","none");
 		}
 	});
 
@@ -71,8 +80,8 @@ $(document).ready( function()
 			{
 				if(data == "success")
 				{
-					$("#inscription-form").css("display", "none");
-					$("#connexion-form").css("display", "flex");
+					$("#inscription_form").css("display", "none");
+					$("#connexion_form").css("display", "flex");
 				}
 				else if(data == "err")
 				{
@@ -98,8 +107,9 @@ $(document).ready( function()
 				password: $('#password-co').val()
 			},
 			function(data){
-				$("#connexion-form").css("display", "none");
-				$("body").prepend($('<p></p>').text("Bonjour "+data["nom"]));
+				$("#connexion_form").css("display", "none");
+				$("#index_article2").css("display", "none");
+				$("header").prepend($('<p></p>').text("Bonjour "+data["nom"]));
 			},
 			"json"
 		);

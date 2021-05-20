@@ -50,21 +50,25 @@
   width: 40%;
   text-align: center;
   border-radius: 25px;
+  margin-left: 33%;
 }
 #index_article2 {
   background-color: #a2c9ca;
   width: 40%;
   text-align: center;
+  margin-left: 33%;
+  display: none;
   border-radius: 25px;
 }
 /*formulaire inscription*/
 #inscription_form {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 #inscription_form input {
   width: 60%;
@@ -91,6 +95,7 @@ input:focus {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
+    width: 100%;
   align-items: center;
   text-align: center;
 }
@@ -149,8 +154,15 @@ a {
   color: white;
 }
 
-#art2,
-#art3 {
+#art3{
+    background-color: #c2dbdb;
+  height: 60vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+#art2{
   background-color: #c2dbdb;
   height: 60vh;
   width: 30%;
