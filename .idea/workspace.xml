@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0001a041-a00d-4d1d-98b7-16c3cfd91046" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/listevalider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/affiche.php" beforeDir="false" afterPath="$PROJECT_DIR$/affiche.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todolist.php" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,8 @@
       <workItem from="1621238087200" duration="14896000" />
       <workItem from="1621259043730" duration="5893000" />
       <workItem from="1621326775117" duration="36444000" />
-      <workItem from="1621428960359" duration="986000" />
+      <workItem from="1621428960359" duration="12791000" />
+      <workItem from="1621459883073" duration="2683000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page index faites">
       <created>1621241395049</created>
@@ -109,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621420618234</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="La liste est mtn sauvegarder, et apparait au moment de la connexion sur la page">
+      <created>1621432400380</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1621432400380</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +146,8 @@
     <MESSAGE value="La liste est mtn sauvegarder dans la bdd" />
     <MESSAGE value="Une session id est créer pendant la connexion, condition pour accéder à la page todolist" />
     <MESSAGE value="La session id est mtn converti en variable js pour la base de donnée" />
-    <option name="LAST_COMMIT_MESSAGE" value="La session id est mtn converti en variable js pour la base de donnée" />
+    <MESSAGE value="La liste est mtn sauvegarder, et apparait au moment de la connexion sur la page" />
+    <option name="LAST_COMMIT_MESSAGE" value="La liste est mtn sauvegarder, et apparait au moment de la connexion sur la page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

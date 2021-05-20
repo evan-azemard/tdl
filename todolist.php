@@ -4,12 +4,9 @@ if (empty($_SESSION['id'])){
     header('location: index.php');
 }
 include ('affiche.php');
-
-
+include ('listevalider.php');
 ?>
-<script>
-    var id = <?php echo $_SESSION['id'];?>;
-</script>
+<script>var id = <?php echo $_SESSION['id'];?>;</script>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -20,6 +17,7 @@ include ('affiche.php');
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
+
 </head>
 <body id="index_body">
 <header id="tdl_header">
@@ -37,7 +35,7 @@ include ('affiche.php');
         <article id="art1">
             <div  class="form_ajouter">
                 <legend>Ajouter une tache</legend>
-                <input aria-label="titre" id="tachename"  placeholder="Nom de la tache" type="text">
+                <input aria-label="titre" id="tachename" autocomplete="off" minlength="1" maxlength="24" placeholder="Nom de la tache" type="text">
                 <p><span id="buttonajouter">Ajouter</span></p>
             </div>
         </article>
@@ -47,19 +45,20 @@ include ('affiche.php');
             </div>
             <?php
             foreach ($liste as $li){
-?>
-            <div class="div_list">
-                <div class="div_list_1">
-                    <h1><?= $li['message']; ?></h1>
+                ?>
+
+                <div class="div_list">
+                    <div class="div_list_1">
+                        <h1><?= $li['message']; ?></h1>
+                    </div>
+                    <div class="div_list_2">
+                        <p>Créer le <span class="debutdate"><?= $li['date_debut']; ?></span></p></div>
+                    <div class="div_list_3">
+                        <button class="button">Tache accomplie</button>
+                        <button class="button2">Supprimer la tache</button>
+                    </div>
                 </div>
-                <div class="div_list_2">
-                    <p>Créer le <?= $li['date_debut']; ?></p></div>
-                <div class="div_list_3">
-                    <button>Tache accomplie</button>
-                    <button>Supprimer la tache</button>
-                </div>
-            </div>
-<br>
+                <br>
                 <?php
             }
             ?>
@@ -69,22 +68,25 @@ include ('affiche.php');
             <div class="titre_list">
                 <h1 class="h1titre">Taches accomplie.</h1>
             </div>
-            <div class="div_list">
-                <div class="div_list_1">
-                    <div class="titre_list">
-                        <h2>titre</h2>
+            <?php
+            foreach ($liste2 as $li){
+                ?>
+                <div class="div_list">
+                    <div class="div_list_1">
+                        <div class="titre_list">
+                            <h2><?= $li['message']; ?></h2>
+                        </div>
                     </div>
-                    <div class="description_list">
-                        <p>description</p>
+                    <div class="div_list_2">
+                        <p>Créer le <br><?= $li['date_debut']; ?></p>
+                    </div>
+                    <div class="div_list_3">
+                        <p>Finit le <br><?= $li['date_fin']; ?></p>
                     </div>
                 </div>
-                <div class="div_list_2">
-                    <p>Créer le <br>28/06/2021</p>
-                </div>
-                <div class="div_list_2">
-                    <p>Finit le <br>28/06/2021</p>
-                </div>
-            </div>
+                <?php
+            }
+            ?>
             <br>
         </article>
     </section>
@@ -93,6 +95,7 @@ include ('affiche.php');
     <p>Copyright 2021 © Evan Azemard, Clément Nahmens To Do list | Tous droits réservés</p>
 </footer>
 </body>
-<script src="script.js"></script>
 </html>
+
+<script src="script.js"></script>
 

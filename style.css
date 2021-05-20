@@ -283,3 +283,11 @@ textarea:focus {
   cursor: pointer;
 
 }
+.div_list_3{
+  color: white;
+  font-size: 1.6rem;
+}
+.button1,.button2{
+    cursor: pointer;
+
+}
