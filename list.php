@@ -9,7 +9,12 @@ if (isset($_POST["input"]) && isset($_POST["dateLocale"]) && isset($_POST["utili
 
     $sql = $stmt->prepare("INSERT INTO liste (id_user,message,date_debut) VALUE (?,?,?) ");
     $sql->execute(array($utilisateur, $input, $dateLocale));
+
+
+
 }
+
+
 
 
 

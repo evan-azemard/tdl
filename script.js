@@ -114,6 +114,7 @@ $(document).ready( function()
 
 function getValue() {
 
+	var fo = document.createElement("form");
 	var input = document.getElementById("tachename").value.trim();
 	var input2 = document.getElementById("tachename").value.trim();
 	let div = document.createElement("div");
@@ -154,28 +155,30 @@ function getValue() {
 			p.append(para,br,dateLocale);
 			button1.append("Tache accomplie");
 			button2.append("Supprimer la tache");
+			fo.className = "div_listform";
 
 			document.getElementById("art2").appendChild(div);
 			document.getElementById("art2").appendChild(br);
 
 
-			div.appendChild(div1);
-			div.appendChild(div2);
-			div.appendChild(div3);
+			div.appendChild(fo);
+			fo.appendChild(div1);
+			fo.appendChild(div2);
+			fo.appendChild(div3);
 
 			div1.appendChild(h1);
 			div2.appendChild(p);
 			div3.appendChild(button1);
 			div3.appendChild(button2);
 
-				$.post(
-					"list.php",
-					{
-						input: input,
-						dateLocale: dateLocale,
-						utilisateur: id,
+			$.post(
+				"list.php",
+				{
+					input: input,
+					dateLocale: dateLocale,
+					utilisateur: id,
 
-					});
+				});
 
 		}else {
 			alert("Le nom de la tache est trop grande ! (" + input2.length + ")")
@@ -188,9 +191,9 @@ function getValue() {
 
 }let ajouter = document.getElementById('buttonajouter');
 
-	ajouter.addEventListener("click", () => {
-		getValue()
-	});
+ajouter.addEventListener("click", () => {
+	getValue()
+});
 
 
 
@@ -228,35 +231,35 @@ function getValider() {
 	});
 
 
-			div.className =  "div_list";
-			div1.className = "div_list_1";
-			div2.className = "div_list_2";
-			div3.className = "div_list_3";
-			h2.append(input);
-			p2.append(para,br,dateLocale);
-			pp.append(p1,br,date1);
+	div.className =  "div_list";
+	div1.className = "div_list_1";
+	div2.className = "div_list_2";
+	div3.className = "div_list_3";
+	h2.append(input);
+	p2.append(para,br,dateLocale);
+	pp.append(p1,br,date1);
 
-			document.getElementById("art3").appendChild(div);
-			document.getElementById("art3").appendChild(br);
-
-
-			div.appendChild(div1);
-			div.appendChild(div2);
-			div.appendChild(div3);
-			div1.appendChild(h2);
-			div2.appendChild(p1);
-			div3.appendChild(p2);
+	document.getElementById("art3").appendChild(div);
+	document.getElementById("art3").appendChild(br);
 
 
-				/*$.post(
-					"list.php",
-					{
-						input: input,
-						dateLocale: dateLocale,
-						utilisateur: id,
+	div.appendChild(div1);
+	div.appendChild(div2);
+	div.appendChild(div3);
+	div1.appendChild(h2);
+	div2.appendChild(p1);
+	div3.appendChild(p2);
 
-					});
-				*/
+
+	/*$.post(
+        "list.php",
+        {
+            input: input,
+            dateLocale: dateLocale,
+            utilisateur: id,
+
+        });
+    */
 }
 
 
@@ -266,6 +269,12 @@ let valider = document.querySelector('.button');
 
 
 valider.addEventListener("click", () => {
-getValider()
+	/*
+    getValider()
+    */
+			b = document.getElementsByClassName('div_list_form')
+	bb = b.id
+			console.log(b)
+
 })
 

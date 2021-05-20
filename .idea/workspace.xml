@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0001a041-a00d-4d1d-98b7-16c3cfd91046" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/listevalider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/affiche.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connexion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deconnexion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/listevalider.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.php" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +43,32 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Plateforme/boutique" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Plateforme/forum" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tdl\css_js" />
+      <recent name="C:\xampp\htdocs\tdl/css_js" />
+      <recent name="C:\xampp\htdocs\tdl/php" />
+      <recent name="C:\xampp\htdocs\tdl" />
+      <recent name="C:\xampp\htdocs\/php" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.script.js">
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/tdl/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/css_js/script.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.script.js" />
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -54,7 +82,7 @@
       <workItem from="1621259043730" duration="5893000" />
       <workItem from="1621326775117" duration="36444000" />
       <workItem from="1621428960359" duration="12791000" />
-      <workItem from="1621459883073" duration="2683000" />
+      <workItem from="1621459883073" duration="12415000" />
     </task>
     <task id="LOCAL-00001" summary="ajout page index faites">
       <created>1621241395049</created>
@@ -119,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621432400380</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="on peut mtn créer une tache acomplie sans valeur  uniquement à la 1er tache">
+      <created>1621500196807</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621500196807</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,13 +182,14 @@
     <MESSAGE value="Une session id est créer pendant la connexion, condition pour accéder à la page todolist" />
     <MESSAGE value="La session id est mtn converti en variable js pour la base de donnée" />
     <MESSAGE value="La liste est mtn sauvegarder, et apparait au moment de la connexion sur la page" />
-    <option name="LAST_COMMIT_MESSAGE" value="La liste est mtn sauvegarder, et apparait au moment de la connexion sur la page" />
+    <MESSAGE value="on peut mtn créer une tache acomplie sans valeur  uniquement à la 1er tache" />
+    <option name="LAST_COMMIT_MESSAGE" value="on peut mtn créer une tache acomplie sans valeur  uniquement à la 1er tache" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/inscription.php</url>
+          <url>file://$PROJECT_DIR$/php/inscription.php</url>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (empty($_SESSION['id'])){
-    header('location: index.php');
+    header('location: ../index.php');
 }
 include ('affiche.php');
 include ('listevalider.php');
@@ -46,23 +46,23 @@ include ('listevalider.php');
             <?php
             foreach ($liste as $li){
                 ?>
-
-                <div class="div_list">
-                    <div class="div_list_1">
-                        <h1><?= $li['message']; ?></h1>
+                <form class="div_listform" id="<?= $li['id'] ?>">
+                    <div class="div_list">
+                        <div class="div_list_1">
+                            <h1><?= $li['message']; ?></h1>
+                        </div>
+                        <div class="div_list_2">
+                            <p>Créer le <span class="debutdate"><?= $li['date_debut']; ?></span></p></div>
+                        <div class="div_list_3">
+                            <button class="button" value="<?= $li['id'] ?>" name="buttonacomp">Tache accomplie</button>
+                            <button class="button2">Supprimer la tache</button>
+                        </div>
                     </div>
-                    <div class="div_list_2">
-                        <p>Créer le <span class="debutdate"><?= $li['date_debut']; ?></span></p></div>
-                    <div class="div_list_3">
-                        <button class="button">Tache accomplie</button>
-                        <button class="button2">Supprimer la tache</button>
-                    </div>
-                </div>
-                <br>
+                </form>
+                    <br>
                 <?php
             }
             ?>
-
         </article>
         <article id="art3">
             <div class="titre_list">

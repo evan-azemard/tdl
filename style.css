@@ -217,6 +217,14 @@ textarea:focus {
   border-radius: 15px;
   height: 15vh;
 }
+.div_listform{
+   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+  border-radius: 15px;
+  height: 15vh;
+}
 .div_list_1 {
   width: 40%;
   border-bottom-left-radius: 15px;
