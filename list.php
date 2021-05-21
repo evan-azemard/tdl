@@ -11,7 +11,6 @@ if (isset($_POST["input"]) && isset($_POST["dateLocale"]) && isset($_POST["utili
     $sql->execute(array($utilisateur, $input, $dateLocale));
 
 
-
 }
 
 

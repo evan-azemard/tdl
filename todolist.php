@@ -35,8 +35,8 @@ include ('listevalider.php');
         <article id="art1">
             <div  class="form_ajouter">
                 <legend>Ajouter une tache</legend>
-                <input aria-label="titre" id="tachename" autocomplete="off" minlength="1" maxlength="24" placeholder="Nom de la tache" type="text">
-                <p><span id="buttonajouter">Ajouter</span></p>
+                <input aria-label="titre" name="tachename" id="tachename" autocomplete="off" minlength="1" maxlength="24" placeholder="Nom de la tache" type="text">
+                <input type="submit" id="buttonajouter" name="submitinput" value="Ajouter">
             </div>
         </article>
         <article id="art2">

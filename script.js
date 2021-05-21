@@ -171,6 +171,23 @@ function getValue() {
 			document.getElementById("art2").appendChild(br);
 
 
+			$.post(
+				"list.php",
+				{
+					input: input,
+					dateLocale: dateLocale,
+					utilisateur: id,
+
+				});
+
+
+				$.post(
+				"recup.php",
+				{
+					input: input,
+				});
+
+
 			div.appendChild(fo);
 			fo.appendChild(div1);
 			fo.appendChild(div2);
@@ -181,14 +198,6 @@ function getValue() {
 			div3.appendChild(button1);
 			div3.appendChild(button2);
 
-			$.post(
-				"list.php",
-				{
-					input: input,
-					dateLocale: dateLocale,
-					utilisateur: id,
-
-				});
 
 		}else {
 			alert("Le nom de la tache est trop grande ! (" + input2.length + ")")
@@ -208,11 +217,7 @@ ajouter.addEventListener("click", () => {
 
 
 
-
-
-
 function getValider() {
-
 
 	var input = document.getElementsByClassName("div_list_1").innerHTML;
 	var date1 = document.getElementsByClassName("debutdate").innerHTML;
@@ -282,9 +287,9 @@ valider.addEventListener("click", () => {
 	/*
     getValider()
     */
-			b = document.getElementsByClassName('div_list_form')
+	b = document.getElementsByClassName('div_list_form')
 	bb = b.id
-			console.log(b)
+	console.log(b)
 
 })
 
