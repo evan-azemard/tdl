@@ -181,11 +181,14 @@ function getValue() {
 				});
 
 
-				$.post(
-				"recup.php",
-				{
-					input: input,
-				});
+			/*$.post(
+            "recup.php",
+            {
+                input: input,
+            });
+*/
+
+
 
 
 			div.appendChild(fo);
@@ -196,7 +199,9 @@ function getValue() {
 			div1.appendChild(h1);
 			div2.appendChild(p);
 			div3.appendChild(button1);
+/*
 			div3.appendChild(button2);
+*/
 
 
 		}else {
@@ -280,16 +285,29 @@ function getValider() {
 
 
 
-let valider = document.querySelector('.button');
+let valider = document.querySelector('.button2');
 
 
 valider.addEventListener("click", () => {
 	/*
     getValider()
     */
-	b = document.getElementsByClassName('div_list_form')
-	bb = b.id
-	console.log(b)
+	e = document.querySelector('.div_list_1').innerHTML
+	
+	$.post(
+		"delete.php",
+		{
+			data: e,
+		});
+
+
+	form = valider.parentNode.parentNode.parentNode
+
+	form.remove()
+
+
+
+
 
 })
 

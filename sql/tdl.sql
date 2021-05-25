@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 19 mai 2021 à 12:39
+-- Généré le : mar. 25 mai 2021 à 11:12
 -- Version du serveur :  10.4.19-MariaDB
 -- Version de PHP : 8.0.6
 
@@ -26,7 +26,9 @@ SET time_zone = "+00:00";
 --
 -- Structure de la table `active`
 --
+
 CREATE DATABASE tdl;
+
 CREATE TABLE `active` (
   `id` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
@@ -34,6 +36,13 @@ CREATE TABLE `active` (
   `date_debut` text NOT NULL,
   `date_fin` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `active`
+--
+
+INSERT INTO `active` (`id`, `id_user`, `message`, `date_debut`, `date_fin`) VALUES
+(1, 4, 'hahaha', '555', '666');
 
 -- --------------------------------------------------------
 
@@ -47,16 +56,6 @@ CREATE TABLE `liste` (
   `message` varchar(25) NOT NULL,
   `date_debut` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Déchargement des données de la table `liste`
---
-
-INSERT INTO `liste` (`id`, `id_user`, `message`, `date_debut`) VALUES
-(5, 0, 'okokok', '0000-00-00 00:00:00'),
-(6, 0, 'ok', '0000-00-00 00:00:00'),
-(7, 4, 'lolitop', '0000-00-00 00:00:00'),
-(8, 4, 'rrrrrrrrrr', '19/05/2021, 12:38');
 
 -- --------------------------------------------------------
 
@@ -112,13 +111,13 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `active`
 --
 ALTER TABLE `active`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `liste`
 --
 ALTER TABLE `liste`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`

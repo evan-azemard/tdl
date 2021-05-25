@@ -7,9 +7,11 @@
         $sel = $bdd->prepare('SELECT id FROM liste  WHERE message = ?');
         $sel->execute(array($_POST['input']));
         $recup = $sel->fetchAll();
+
         var_dump($recup);
 
     }
+    
 
 
 

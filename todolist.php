@@ -54,8 +54,8 @@ include ('listevalider.php');
                         <div class="div_list_2">
                             <p>Créer le <span class="debutdate"><?= $li['date_debut']; ?></span></p></div>
                         <div class="div_list_3">
-                            <button class="button" value="<?= $li['id'] ?>" name="buttonacomp">Tache accomplie</button>
-                            <button class="button2">Supprimer la tache</button>
+<!--                            <button class="button" value="<?/*= $li['id'] */?>" name="buttonacomp">Tache accomplie</button>
+-->                            <button class="button2">Supprimer la tache</button>
                         </div>
                     </div>
                 </form>
@@ -64,31 +64,31 @@ include ('listevalider.php');
             }
             ?>
         </article>
-        <article id="art3">
+<!--        <article id="art3">
             <div class="titre_list">
                 <h1 class="h1titre">Taches accomplie.</h1>
             </div>
             <?php
-            foreach ($liste2 as $li){
-                ?>
+/*            foreach ($liste2 as $li){
+                */?>
                 <div class="div_list">
                     <div class="div_list_1">
                         <div class="titre_list">
-                            <h2><?= $li['message']; ?></h2>
+                            <h2><?/*= $li['message']; */?></h2>
                         </div>
                     </div>
                     <div class="div_list_2">
-                        <p>Créer le <br><?= $li['date_debut']; ?></p>
+                        <p>Créer le <br><?/*= $li['date_debut']; */?></p>
                     </div>
                     <div class="div_list_3">
-                        <p>Finit le <br><?= $li['date_fin']; ?></p>
+                        <p>Finit le <br><?/*= $li['date_fin']; */?></p>
                     </div>
                 </div>
                 <?php
-            }
-            ?>
+/*            }
+            */?>
             <br>
-        </article>
+        </article>-->
     </section>
 </main>
 <footer id="index_footer">
